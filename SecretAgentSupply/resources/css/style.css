@@ -62,6 +62,9 @@ nav{
   background-color: firebrick;
   padding: 0.75rem 0;
 }
+nav .mobile{
+  display:none;
+}
 /*main content*/
 .description{
   background-color: black;
@@ -112,7 +115,80 @@ nav{
 .footer .container span{
   padding: 2rem 0;
 }
+/*Media query tablet size*/
+@media only screen and (max-width: 1024px) and (min-width: 471px){
+  .product{
+    width: 47%;
+  }
+  .third-prod{
+    display: none;
+  }
+  nav .desktop{
+    display: none;
+  }
+  nav .mobile{
+    display: block;
+    text-align: center;
+  }
+}
 
+/*Media query mobile size*/
+@media only screen and (max-width: 470px){
+  /*from tablet media query*/
+  .third-prod{
+    display: none;
+  }
+  nav .desktop{
+    display: none;
+  }
+  nav .mobile{
+    display: block;
+    text-align: center;
+  }
+  /*mobile only*/
+  header .container{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0.415rem;
+  }
+  header span{
+    display: none;
+  }
+  .banner{
+    height: 15rem;
+  }
+  .headline{
+    width: 100%;
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+  h1{
+    font-size: 1rem;
+    margin: 0.125rem 0;
+  }
+  h4{
+    font-size: 0.77rem;
+    margin: 0.5rem 0;
+  }
+  .product{
+    width: 90%;
+  }
+  .second-prod{
+    display: none;
+  }
+  .infobox{
+    width: 90%;
+  }
+  .container{
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .infobox{
+    margin-bottom: 0.5rem;
+  }
+}
 
 
 
