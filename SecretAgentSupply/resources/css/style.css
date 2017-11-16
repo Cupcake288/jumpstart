@@ -74,6 +74,7 @@ nav{
   flex-direction: column;
   justify-content: center;
   margin: 3rem 0;
+  min-height: 15rem;
 }
 .product img{
   max-height: 9rem;
@@ -104,9 +105,12 @@ nav{
   padding: 0.25rem 0;
 }
 /*footer*/
-footer{
+.footer{
   background-color: black;
   height: 5rem;
+}
+.footer .container span{
+  padding: 2rem 0;
 }
 
 
@@ -117,7 +121,7 @@ footer{
 
 
 
-
+/*
 black borders
 div, header, footer, nav {
   border: solid black 1px;
